@@ -58,14 +58,19 @@ Task-1/
 	node app.js
 
 ### Запуск сервиса истории действий с пользователями
-cd ../user-service-history
-ts-node app.ts
+	cd ../user-service-history
+	ts-node app.ts
 
 ### Компиляция TypeScript
 Если вы хотите запустить всё одновременно с помощью одного файла start.js, который находится в корневой папке, то перед этим, необходимо скомпилировать TypeScript код в JavaScript:
 
 	cd ../user-service-history
 	tsc
+
+### Установка зависимостей
+
+	cd ./
+	npm install
 
 ### Запуск обоих сервисов
 	cd ./
