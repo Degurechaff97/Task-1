@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2016",           // Компиляция в ES2016
+    "module": "commonjs",         // Использование CommonJS модулей
+    "allowJs": true,
+    "esModuleInterop": true,      // Поддержка импорта модулей ES6
+    "moduleResolution": "node",   // Разрешение модулей как в Node.js
+    "outDir": "./build",
+    "baseUrl": ".",               // Базовый URL для разрешения немодульных импортов
+    "strict": true,               // Включение всех строгих проверок типов
+    "forceConsistentCasingInFileNames": true, // Обеспечение согласованности регистра в именах файлов
+    "skipLibCheck": true          // Пропуск проверки типов файлов .d.ts
+  },
+  "include": [
+    "**/*.ts"  // Включение всех файлов .ts в корневой директории
+  ],
+  "exclude": [
+    "node_modules",  // Исключение папки с модулями
+    "dist"           // Исключение директории с результатами компиляции
+  ]
+}
